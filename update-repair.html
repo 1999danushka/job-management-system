@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Repair Details</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-image: url('How-to-Incorporate-a-Company-in-One-Day.png'); /* Replace with your image path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            width: 400px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        form input, form button {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        form button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #218838;
+        }
+
+        form input:focus {
+            outline: none;
+            border-color: #28a745;
+            box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Repaired and Re-delivered</h1>
+        <form id="updateRepairForm">
+            <!-- IMS Job Number -->
+            <label for="imsJobNumber">IMS Job Number</label>
+            <input type="text" id="imsJobNumber" placeholder="Enter IMS Job Number" required>
+
+            <!-- Serial Number -->
+            <label for="serialNumber">Serial Number</label>
+            <input type="text" id="serialNumber" placeholder="Enter Serial Number" required>
+
+            <!-- Asset Number -->
+            <label for="assetNumber">Asset Number</label>
+            <input type="text" id="assetNumber" placeholder="Enter Asset Number" required>
+
+            <!-- Description -->
+            <label for=" description">Replace parts and Description</label>
+            <input type="text" id="description" placeholder="Enter Description" required>
+
+            <!-- Replace Parts -->
+           <label for="replaceparts">Replace Parts</label>
+            <input type="text" id="replaceparts" placeholder="Enter Replace Parts" required> 
+
+          <!----  User EPF 
+            <label for="UserEPF">User EPF</label>
+            <input type="text" id="UserEPF" placeholder="Enter User EPF" required> -->
+
+            <!-- Date -->
+            <label for="date">Date</label>
+            <input type="date" id="date" required>
+
+            <!-- Submit Button -->
+            <button type="submit">Update</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <!-- Include the script -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Mar 25, 2025 at 11:43 AM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.0.30
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `repair`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `jobs`
+--
+
+CREATE TABLE `jobs` (
+  `id` int(11) NOT NULL,
+  `IMS_JOB_NUMBER` varchar(50) DEFAULT NULL,
+  `SERIAL_NUMBER` varchar(50) DEFAULT NULL,
+  `ASSET_NUMBER` varchar(50) DEFAULT NULL,
+  `DATE` date DEFAULT NULL,
+  `DESCRIPTION` text DEFAULT NULL,
+  `TECHNICIAN_NAME` varchar(100) DEFAULT NULL,
+  `HAND_IN_DATE` date DEFAULT NULL,
+  `Replace_parts` varchar(100) DEFAULT NULL,
+  `User_EPF` int(20) DEFAULT NULL,
+  `Division` varchar(20) DEFAULT NULL,
+  `Section` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `jobs`
+--
+
+INSERT INTO `jobs` (`id`, `IMS_JOB_NUMBER`, `SERIAL_NUMBER`, `ASSET_NUMBER`, `DATE`, `DESCRIPTION`, `TECHNICIAN_NAME`, `HAND_IN_DATE`, `Replace_parts`, `User_EPF`, `Division`, `Section`) VALUES
+(2, 'asdf', 'sdf', 'sdf', '2025-03-03', 'sdfsdf', 'sdfsdf', '2025-03-21', NULL, NULL, NULL, NULL),
+(3, '111', 'dfgdfg', 'dfg', '2025-03-06', 'dfgdfg', 'dfgdfg', '2025-03-21', NULL, NULL, NULL, NULL),
+(4, '002', 'fhh', '21321', '2025-03-19', '3213213', 'jljljk', '2025-03-12', NULL, NULL, NULL, NULL),
+(5, '7348', '233', '43', '2025-03-25', 'bfgghfghfhjfk', 'mmjhjjhj', '2025-03-23', NULL, NULL, NULL, NULL),
+(6, '7348', '233', '43', '2025-03-25', 'bfgghfghfhjfk', 'mjhjkhkj', '2025-05-03', NULL, NULL, NULL, NULL),
+(7, '2211', '112233', '44555', '2025-03-24', 'cxgdsdsfdgdfdxf', 'fsgstgeyehhr', '2025-03-24', NULL, NULL, NULL, NULL),
+(8, '3322', '9089', '9988', '2025-03-25', 'hgdhgfzjdfhgjfdsgjKd', 'hgfhahfjd', '2025-03-25', NULL, NULL, NULL, NULL),
+(9, '6767', '8899', '43', '2025-03-12', 'hnghghjgkj', 'hrfhtyjh,', '2025-03-25', NULL, NULL, NULL, NULL),
+(10, '5510', '8899', '9988', '2025-03-25', 'aaaaaaaaaaaaaaaaaa', 'chamith', '2025-03-25', NULL, NULL, NULL, NULL),
+(11, '5510', '5656', '9988', '2025-03-25', 'aaaaaaaaaaaaaaaaaa', 'jhukkliuiluoil', '2025-03-25', NULL, NULL, NULL, NULL),
+(12, '6767', '8899', '9988', '2025-03-25', 'nmkjl.kioliiluytrgew', 'hmghjgj', '2025-03-19', NULL, NULL, NULL, NULL);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `jobs`
+--
+ALTER TABLE `jobs`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `jobs`
+--
+ALTER TABLE `jobs`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
